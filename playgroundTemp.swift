@@ -264,6 +264,7 @@ b.message = "World"
 print(b.message)
 */
 
+/*
 struct DatabaseManager {
     
     private var serverName = "Server 1"
@@ -289,3 +290,30 @@ struct ChatView {
     }
 
 }
+*/
+
+//MARK: Lesson 9 challenger 1
+
+struct TaxCalculator {
+    
+    var tax: Double = 0.5
+    
+    func totalWithTax(_ total: Double) -> Double {
+        return total * (1 + tax)
+    }
+    
+}
+
+struct BillSplitter {
+    
+    func splitBy(subtotal: Double, numPeople: Int) -> Double {
+        let taxCalc = TaxCalculator()
+        let totalWithTax = taxCalc.totalWithTax(subtotal)
+                
+        return totalWithTax / Double(numPeople)
+    }
+    
+}
+
+var split: BillSplitter = BillSplitter()
+split.splitBy(subtotal : 120.0, numPeople: 5)
