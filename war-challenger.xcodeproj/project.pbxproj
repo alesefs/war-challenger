@@ -19,6 +19,7 @@
 		F00F7C022B9D26A200B1221D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F00F7C042B9D26A300B1221D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F00F7C072B9D26A300B1221D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F00F7C0E2B9D5B1600B1221D /* Temp.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Temp.playground; path = ../../Temp.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 			children = (
 				F00F7C002B9D26A200B1221D /* war_challengerApp.swift */,
 				F00F7C022B9D26A200B1221D /* ContentView.swift */,
+				F00F7C0E2B9D5B1600B1221D /* Temp.playground */,
 				F00F7C042B9D26A300B1221D /* Assets.xcassets */,
 				F00F7C062B9D26A300B1221D /* Preview Content */,
 			);
