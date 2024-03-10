@@ -171,3 +171,121 @@ func calculateTotalWithTax(subtotal: Double, tax: Double) -> Double {
 }
 
 print(calculateTotalWithTax(subtotal: 11, tax: 8))
+
+
+//MARK: Struct - são tipo uma classe que envolve funções, tipo um object no kotlin - não é auto chamado e precisa ser instanciado
+
+/*
+ struct MyStruct {
+ 
+ //var and let
+ 
+ 
+ //func
+ 
+ 
+ }
+ */
+
+/*
+ struct ChatView {
+ 
+ //properties -> global var & let
+ var message: String = ""
+ 
+ //computer property -> tipo variavel lambda kotlin
+ var messageWithPrefix: String {
+ let prefix: String = "I say "
+ return prefix + message
+ }
+ 
+ //view code for screen
+ 
+ //methods -> inside struct func
+ func sendChat() {
+ 
+ var prefix = "Says: " //just use inside this func
+ 
+ //code to send the chat message
+ print(prefix + message)
+ print(messageWithPrefix)
+ 
+ }
+ 
+ func deleteChat() {
+ print(message)
+ }
+ 
+ }
+ */
+
+//MARK: chanllenger lesson 8 - struct
+/*
+struct Car {
+    
+    private var make: String = "Toyota"
+    private var model: String = "Camry"
+    private var year: String = "1999"
+    
+    private var details: String {
+        return year + " " + make + " " + model
+    }
+    
+    func getDetail() -> String {
+        return details
+    }
+    
+}
+
+print(Car().getDetail())
+
+*/
+
+//L9
+/*
+struct MyStructure {
+    
+    var message: String = "Hello!"
+    
+    func myFunction() {
+        print(message)
+    }
+    
+}
+
+var a:MyStructure = MyStructure()
+
+//Dot notations
+a.message = "Hi!"
+a.myFunction()
+
+var b = MyStructure()
+b.message = "World"
+print(b.message)
+*/
+
+struct DatabaseManager {
+    
+    private var serverName = "Server 1"
+    
+    func saveData(data: String) -> Bool {
+        //this code save the data
+        
+        return true
+    }
+    
+}
+
+struct ChatView {
+
+    var message: String = "Hello"
+
+    func sendChat() {
+        var db = DatabaseManager()
+        
+        let wasSuccess: Bool = db.saveData(data: message)
+        
+        //check the successful bool value, if unsuccessful, show alert to user
+    }
+
+}
